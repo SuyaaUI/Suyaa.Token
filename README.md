@@ -14,8 +14,8 @@ An token microservice for .Net 6
 ```
 {
     "apps":[
-        { "app_id": "应用1唯一标识", "app_name": "应用1名称", "app_key": "应用1通讯密钥", app_time:"应用1令牌有效时间" },
-        { "app_id": "应用2唯一标识", "app_name": "应用2名称", "app_key": "应用2通讯密钥", app_time:"应用2令牌有效时间" }
+        { "app_id": "应用1标识", "app_name": "应用1名称", "app_key": "应用1密钥", app_time:"应用1令牌有效时长" },
+        { "app_id": "应用2标识", "app_name": "应用2名称", "app_key": "应用2密钥", app_time:"应用2令牌有效时长" }
     ]
 }
 ```
@@ -42,7 +42,7 @@ An token microservice for .Net 6
 
 为保证通讯的安全性，使用sha512进行签名校验
 
-假设唯一标识(app_id)为xxx，时间戳(apply_time)为123456789，通讯密钥(app_key)为yyy，那算法为：
+假设唯一标识(app_id)为xxx，时间戳(apply_time)为123456789，密钥(app_key)为yyy，那算法为：
 
 ```
 str = "app_id=xxx&app_key=yyy&apply_time=123456789"
