@@ -14,8 +14,8 @@ An token microservice for .Net 6
 ```
 {
     "apps":[
-        { "app_id": "应用1标识", "app_name": "应用1名称", "app_key": "应用1密钥", app_time:"应用1令牌有效时长" },
-        { "app_id": "应用2标识", "app_name": "应用2名称", "app_key": "应用2密钥", app_time:"应用2令牌有效时长" }
+        { "app_id": "应用标识1", "app_name": "名称1", "app_key": "密钥1", app_time:"令牌有效时长1" },
+        { "app_id": "应用标识2", "app_name": "名称2", "app_key": "密钥2", app_time:"令牌有效时长2" }
     ]
 }
 ```
